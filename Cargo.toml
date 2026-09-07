@@ -1,0 +1,18 @@
+[package]
+name = "ereader"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rppal = "0.18"
+epub = "2.0"
+image = "0.25"
+ab_glyph = "0.2"
+anyhow = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+zip = "3.0"
+libc = "0.2"
+
+[profile.release]
+opt-level = 3
